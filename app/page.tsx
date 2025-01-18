@@ -41,7 +41,7 @@ export default function Home() {
       photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
     },
     {
-      name: "Dhiphika P",
+      name: "Dhiphika R",
       role: "Social Media Team Lead",
       bio: "Dhiphika manages all outreach efforts, promoting IARRD’s work and securing partnerships through social media and public engagements.",
       photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
