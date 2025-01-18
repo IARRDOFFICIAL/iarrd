@@ -14,25 +14,37 @@ export default function Home() {
       name: "Harish Ragavendra Srinivasan",
       role: "Founder & CEO",
       bio: "Harish is the founder of IARRD, with expertise in AI and Data Science. He leads all teams and oversees the strategic direction of the organization’s key projects.",
-      photo: "https://i.pinimg.com/736x/01/40/40/01404019d06867a7b30f8d5572ade49e.jpg"
+      photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
+    },
+    {
+      name: "Keerthi Sai",
+      role: "Chief Technology Officer (CTO) & R&D Team Lead",
+      bio: "Keerthi Sai is the Chief Technology Officer and leads the Research and Development team at IARRD. With a strong background in [specific field, e.g., aerospace engineering, robotics, etc.], she plays a pivotal role in driving technological innovation and overseeing the development of cutting-edge projects within the organization.",
+      photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
+    },
+    {
+      name: "Aadhi",
+      role: "Astronomy Team Lead",
+      bio: "Aadhi leads the Astronomy team at IARRD, focusing on the development of AI-driven tools for enhancing astronomical observations and research. His work contributes to advancing our understanding of the universe through innovative and accessible technologies.",
+      photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
     },
     {
       name: "Shravanthi S.",
       role: "Defence Team Lead",
       bio: "Shravanthi leads the Defence team, researching space security and defense technologies, contributing to IARRD’s mission of sustainable space exploration.",
-      photo: "https://i.pinimg.com/736x/01/40/40/01404019d06867a7b30f8d5572ade49e.jpg"
+      photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
     },
     {
       name: "Syed Aarish",
       role: "Satellite Team Lead",
       bio: "Syed heads the satellite division, working on the development of CubeSat technologies and satellite payload systems to monitor the Earth and beyond.",
-      photo: "https://i.pinimg.com/736x/01/40/40/01404019d06867a7b30f8d5572ade49e.jpg"
+      photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
     },
     {
       name: "Dhiphika.P",
       role: "Social Media Team Lead",
       bio: "Dhiphika manages all outreach efforts, promoting IARRD’s work and securing partnerships through social media and public engagements.",
-      photo: "https://i.pinimg.com/736x/01/40/40/01404019d06867a7b30f8d5572ade49e.jpg"
+      photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
     }
   ];
 
@@ -41,24 +53,21 @@ export default function Home() {
       name: "PrithiviSat",
       description: "PrithiviSat is an AI-powered CubeSat designed for disaster mitigation, environmental monitoring, and real-time weather forecasting. It is specifically aimed at managing natural disasters and agricultural optimization.",
       progress: 80,
-      budget: "₹2000",
-      timeline: "2025-2030",
+      timeline: "2023-2036",
       image: "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&q=80"
     },
     {
-      name: "CubeSat Missions",
-      description: "IARRD is developing several CubeSat projects focused on providing low-cost solutions for educational institutions and research organizations. These satellites will support environmental monitoring and data analytics for global challenges.",
-      progress: 68,
-      budget: "₹4000",
-      timeline: "2023-2026",
+      name: "Amaran Drone",
+      description: "IARRD is advancing its Amaran Drone project to develop cutting-edge drone technology for surveillance, security applications, and disaster management. These drones will provide affordable and efficient solutions for defense and public safety.",
+      progress: 45,
+      timeline: "2024-2027",
       image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&q=80"
     },
     {
-      name: "Hybrid Rocket Propulsion",
-      description: "Our hybrid rocket propulsion system is a step toward making space travel more affordable and sustainable. We are focusing on the development of reusable rocket technologies and green propulsion systems for future space missions.",
+      name: "Astronomy Research Tools",
+      description: "IARRD is creating advanced AI-driven tools to enhance astronomical observations and research. These tools aim to provide accessible and innovative solutions for educational and research institutions, supporting the study of celestial phenomena.",
       progress: 82,
-      budget: "₹2500",
-      timeline: "2022-2024",
+      timeline: "2025-2026",
       image: "https://images.unsplash.com/photo-1446776858070-70c3d5ed6758?auto=format&fit=crop&q=80"
     }
   ];
@@ -82,7 +91,6 @@ export default function Home() {
     if (projectDetails) {
       alert(`
 Project: ${projectDetails.name}
-Budget: ${projectDetails.budget}
 Timeline: ${projectDetails.timeline}
 Current Progress: ${projectDetails.progress}%
 
@@ -247,22 +255,29 @@ Status: Active - Click OK to view detailed documentation.
                 <div className="bg-white/10 p-6 rounded-lg mb-6 inline-block">
                   <Rocket className="w-12 h-12" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Space Launches</h3>
-                <p className="text-gray-400">Pioneering the future of space travel with regular launches to orbit and beyond</p>
+                <h3 className="text-2xl font-bold mb-4">Astronomy</h3>
+                <p className="text-gray-400">Advancing our understanding of the universe with cutting-edge observational tools and AI-driven research methodologies.</p>
               </div>
               <div className="text-center cursor-pointer hover:transform hover:scale-105 transition-transform">
                 <div className="bg-white/10 p-6 rounded-lg mb-6 inline-block">
                   <Satellite className="w-12 h-12" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Satellite Network</h3>
-                <p className="text-gray-400">Building the next generation of global communication infrastructure</p>
+                <h3 className="text-2xl font-bold mb-4">Defence</h3>
+                <p className="text-gray-400">Innovating in advanced defence systems with drone technology and AI solutions for enhanced national security and surveillance.</p>
               </div>
               <div className="text-center cursor-pointer hover:transform hover:scale-105 transition-transform">
                 <div className="bg-white/10 p-6 rounded-lg mb-6 inline-block">
                   <Globe2 className="w-12 h-12" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Mars Colonization</h3>
-                <p className="text-gray-400">Working towards establishing the first human settlement on Mars</p>
+                <h3 className="text-2xl font-bold mb-4">Rocket</h3>
+                <p className="text-gray-400">Developing cost-effective and reusable rocket propulsion systems to enable affordable and sustainable space exploration.</p>
+              </div>
+              <div className="text-center cursor-pointer hover:transform hover:scale-105 transition-transform">
+                <div className="bg-white/10 p-6 rounded-lg mb-6 inline-block">
+                  <Satellite className="w-12 h-12" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4">Satellite</h3>
+                <p className="text-gray-400">Creating innovative CubeSat solutions for environmental monitoring, disaster management, and global connectivity.</p>
               </div>
             </div>
           </div>
@@ -293,7 +308,6 @@ Status: Active - Click OK to view detailed documentation.
                         />
                       </div>
                       <div className="flex justify-between text-sm text-gray-400">
-                        <span>Budget: {project.budget}</span>
                         <span>{project.timeline}</span>
                       </div>
                     </div>
@@ -368,15 +382,15 @@ Status: Active - Click OK to view detailed documentation.
                 <div className="space-y-4">
                   <p className="flex items-center gap-3">
                     <Mail className="w-5 h-5" />
-                    <span>harish@iarrd.com</span>
+                    <span>iarrd.official@gmail.com</span>
                   </p>
                   <p className="flex items-center gap-3">
                     <Phone className="w-5 h-5" />
-                    <span>+91 12345 67890</span>
+                    <span>+91 99526 57214</span>
                   </p>
                   <p className="flex items-center gap-3">
                     <Globe2 className="w-5 h-5" />
-                    <span>Dubai kuruku santhu, chrompet-44</span>
+                    <span>Anaicut road, Ranipet-13</span>
                   </p>
                 </div>
               </div>
