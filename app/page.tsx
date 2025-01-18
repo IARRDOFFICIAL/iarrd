@@ -155,19 +155,20 @@ export default function Home() {
         <span className="text-lg">About</span>
       </button>
       <button
-        onClick={() => handleNavigation('Team')}
-        className="flex items-center gap-4 text-white/80 hover:text-white w-full p-3 rounded-lg hover:bg-white/10 transition-all"
-      >
-        <Users className="w-5 h-5" />
-        <span className="text-lg">Team</span>
-      </button>
-      <button
         onClick={() => handleNavigation('Projects')}
         className="flex items-center gap-4 text-white/80 hover:text-white w-full p-3 rounded-lg hover:bg-white/10 transition-all"
       >
         <FolderKanban className="w-5 h-5" />
         <span className="text-lg">Projects</span>
       </button>
+      <button
+        onClick={() => handleNavigation('Team')}
+        className="flex items-center gap-4 text-white/80 hover:text-white w-full p-3 rounded-lg hover:bg-white/10 transition-all"
+      >
+        <Users className="w-5 h-5" />
+        <span className="text-lg">Team</span>
+      </button>
+
       <button
         onClick={() => handleNavigation('Contact')}
         className="flex items-center gap-4 text-white/80 hover:text-white w-full p-3 rounded-lg hover:bg-white/10 transition-all"
