@@ -25,7 +25,7 @@ export default function Home() {
     {
       name: "Aadhi",
       role: "Astronomy Team Lead",
-      bio: "Aadhi leads the Astronomy team at IARRD, focusing on the development of AI-driven tools for enhancing astronomical observations and research. His work contributes to advancing our understanding of the universe through innovative and accessible technologies.",
+      bio: "Aadhi leads the Astronomy team at IARRD, focusing on developing AI-driven tools to enhance astronomical research and observations. His work advances our understanding of the universe through innovative technologies.",
       photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
     },
     {
@@ -61,7 +61,7 @@ export default function Home() {
       description: "IARRD is advancing its Amaran Drone project to develop cutting-edge drone technology for surveillance, security applications, and disaster management. These drones will provide affordable and efficient solutions for defense and public safety.",
       progress: 45,
       timeline: "2024-2027",
-      image: "https://i.pinimg.com/736x/79/b0/42/79b04283a0624e302a58fd156ab333a7.jpg"
+      image: "https://i.pinimg.com/736x/16/b1/b2/16b1b2022ed00c739b1a18fe1d29b496.jpg"
     },
     {
       name: "Astronomy Research Tools",
@@ -90,16 +90,16 @@ export default function Home() {
     const projectDetails = projects.find(p => p.name === projectName);
     if (projectDetails) {
       alert(`
-Project: ${projectDetails.name}
-Timeline: ${projectDetails.timeline}
-Current Progress: ${projectDetails.progress}%
+    Project: ${projectDetails.name}
+    Timeline: ${projectDetails.timeline}
+    Current Progress: ${projectDetails.progress}%
 
-Description: ${projectDetails.description}
+    Description: ${projectDetails.description}
 
-Status: Active - Click OK to view detailed documentation.
-      `);
-    }
-  };
+    Status: Active - Click OK to view detailed documentation.
+          `);
+        }
+      };
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
@@ -221,19 +221,19 @@ Status: Active - Click OK to view detailed documentation.
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <h3 className="text-2xl font-bold mb-4">Pioneering Space Exploration</h3>
-                <p className="text-gray-400 mb-6">IARRD (Indian Astronomy Rocket Research and Development) is an innovative space technology organization founded on May 27, 2023, by Harish Ragavendra Srinivasan. Our focus is on advancing space exploration, astronomy, and rocket science in India. We aim to make space technologies more accessible, sustainable, and affordable, solving real-world problems through cutting-edge innovations.</p>
-                <p className="text-gray-400 mb-6" > We specialize in developing low-cost satellites, hybrid rocket propulsion systems, and AI-powered astronomical research tools. IARRD’s goal is to contribute significantly to India’s space capabilities and the global space community.</p>
+                <p className="text-gray-400 mb-6">IARRD (Indian Astronomy Rocket Research and Development), founded on May 27, 2023, by Harish Ragavendra Srinivasan, is a trailblazing space technology organization dedicated to advancing space exploration, astronomy, rocket science, and defense technology in India. Our mission is to democratize access to space technologies by making them more sustainable, affordable, and impactful in solving real-world challenges.</p>
+                <p className="text-gray-400 mb-6" >At IARRD, we specialize in the development of low-cost satellites, hybrid rocket propulsion systems, AI-powered astronomical research tools, and defense innovations. Through these technologies, we aim to enhance India's space and defense capabilities and make meaningful contributions to the global space and security community.</p>
                 <ul className="space-y-4 text-gray-400">
                   <li className="flex items-center gap-2">
                   <h4 className="text-white-200 text-xl font-bold">Vision: </h4>
                     <div className="w-2 h-2 bg-white rounded-full"></div>
                     
-                    To make space exploration affordable, accessible, and sustainable, solving real-world problems through space technology.
+                    To revolutionize space exploration and defense technology by making them affordable, accessible, and sustainable, addressing global challenges through innovative space and defense solutions.
                   </li>
                   <li className="flex items-center gap-2">
                     <h4 className="text-white-200 text-xl font-bold">Mission:</h4>
                     <div className="w-2 h-2 bg-white rounded-full"></div>
-                    IARRD is working on CubeSat missions, hybrid rocket propulsion, and AI-powered satellites that monitor environmental challenges, aid disaster mitigation, and offer educational outreach.
+                    We are committed to developing CubeSat missions, hybrid rocket propulsion, AI-powered satellites designed for environmental monitoring, disaster mitigation, educational outreach, and defense applications, thus bringing space technology closer to the community.  
                   </li>
                 </ul>
               </div>
