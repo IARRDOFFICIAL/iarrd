@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Rocket, Satellite, Globe2, ExternalLink, Mail, Menu, X, Users, Phone, Info, FolderKanban } from "lucide-react";
+import { ArrowRight, Rocket, Satellite, Globe2, ExternalLink, Mail, Menu, X, Users, Phone, Info, FolderKanban, Shield } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
     {
       name: "Keerthi Sai",
       role: "Chief Technology Officer (CTO) & R&D Team Lead",
-      bio: "Keerthi Sai is the Chief Technology Officer and leads the Research and Development team at IARRD. With a strong background in [specific field, e.g., aerospace engineering, robotics, etc.], she plays a pivotal role in driving technological innovation and overseeing the development of cutting-edge projects within the organization.",
+      bio: "Keerthi Sai is the Chief Technology Officer and leads the R&D team at IARRD. With a strong background in data analysis, she drives technological innovation and oversees the development of key projects within the organization.",
       photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
     },
     {
@@ -54,20 +54,20 @@ export default function Home() {
       description: "PrithiviSat is an AI-powered CubeSat designed for disaster mitigation, environmental monitoring, and real-time weather forecasting. It is specifically aimed at managing natural disasters and agricultural optimization.",
       progress: 80,
       timeline: "2023-2036",
-      image: "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&q=80"
+      image: "https://i.pinimg.com/736x/59/3e/d2/593ed24b756ec62002e7d694deea60a5.jpg"
     },
     {
       name: "Amaran Drone",
       description: "IARRD is advancing its Amaran Drone project to develop cutting-edge drone technology for surveillance, security applications, and disaster management. These drones will provide affordable and efficient solutions for defense and public safety.",
       progress: 45,
       timeline: "2024-2027",
-      image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&q=80"
+      image: "https://i.pinimg.com/736x/79/b0/42/79b04283a0624e302a58fd156ab333a7.jpg"
     },
     {
       name: "Astronomy Research Tools",
       description: "IARRD is creating advanced AI-driven tools to enhance astronomical observations and research. These tools aim to provide accessible and innovative solutions for educational and research institutions, supporting the study of celestial phenomena.",
-      progress: 82,
-      timeline: "2025-2026",
+      progress: 15,
+      timeline: "2025-2027",
       image: "https://images.unsplash.com/photo-1446776858070-70c3d5ed6758?auto=format&fit=crop&q=80"
     }
   ];
@@ -260,7 +260,7 @@ Status: Active - Click OK to view detailed documentation.
               </div>
               <div className="text-center cursor-pointer hover:transform hover:scale-105 transition-transform">
                 <div className="bg-white/10 p-6 rounded-lg mb-6 inline-block">
-                  <Satellite className="w-12 h-12" />
+                  <Shield className="w-12 h-12" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Defence</h3>
                 <p className="text-gray-400">Innovating in advanced defence systems with drone technology and AI solutions for enhanced national security and surveillance.</p>
