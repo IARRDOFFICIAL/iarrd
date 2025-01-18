@@ -29,7 +29,7 @@ export default function Home() {
       photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
     },
     {
-      name: "Shravanthi S.",
+      name: "Shravanthi S",
       role: "Defence Team Lead",
       bio: "Shravanthi leads the Defence team, researching space security and defense technologies, contributing to IARRD’s mission of sustainable space exploration.",
       photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
@@ -41,7 +41,7 @@ export default function Home() {
       photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
     },
     {
-      name: "Dhiphika.P",
+      name: "Dhiphika P",
       role: "Social Media Team Lead",
       bio: "Dhiphika manages all outreach efforts, promoting IARRD’s work and securing partnerships through social media and public engagements.",
       photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
@@ -53,7 +53,7 @@ export default function Home() {
       name: "PrithiviSat",
       description: "PrithiviSat is an AI-powered CubeSat designed for disaster mitigation, environmental monitoring, and real-time weather forecasting. It is specifically aimed at managing natural disasters and agricultural optimization.",
       progress: 80,
-      timeline: "2023-2036",
+      timeline: "2023-2026",
       image: "https://i.pinimg.com/736x/59/3e/d2/593ed24b756ec62002e7d694deea60a5.jpg"
     },
     {
