@@ -13,7 +13,7 @@ export default function Home() {
     {
       name: "Harish Ragavendra Srinivasan",
       role: "Founder & CEO",
-      bio: "Harish is the founder of IARRD, with expertise in AI and Data Science. He leads all teams and oversees the strategic direction of the organization’s key projects.",
+      bio: "Harish is the visionary founder of IARRD, driven by a passion for AI, space technology, and defense innovation. He leads all teams, spearheading groundbreaking projects in astronomy, satellite research, and rocket development."
       photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
     },
     {
@@ -41,9 +41,9 @@ export default function Home() {
       photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
     },
     {
-      name: "Dhiphika R",
+      name: "Jai Suruthi",
       role: "Social Media Team Lead",
-      bio: "Dhiphika manages all outreach efforts, promoting IARRD’s work and securing partnerships through social media and public engagements.",
+      bio: "Suruthi manages all outreach efforts, promoting IARRD’s work and securing partnerships through social media and public engagements.",
       photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
     }
   ];
