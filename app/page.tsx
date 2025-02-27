@@ -387,7 +387,7 @@ export default function Home() {
                   </p>
                   <p className="flex items-center gap-3">
                     <Phone className="w-5 h-5" />
-                    <span>+91 99526 57214</span>
+                    <span>+91 8903272879</span>
                   </p>
                   <p className="flex items-center gap-3">
                     <Globe2 className="w-5 h-5" />
