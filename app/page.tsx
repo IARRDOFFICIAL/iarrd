@@ -41,9 +41,9 @@ export default function Home() {
       photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
     },
     {
-      name: "Dhiphika R",
+      name: "Jai Suruthi",
       role: "Social Media Team Lead",
-      bio: "Dhiphika manages all outreach efforts, promoting IARRD’s work and securing partnerships through social media and public engagements.",
+      bio: "Suruthi manages all outreach efforts, promoting IARRD’s work and securing partnerships through social media and public engagements.",
       photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
     }
   ];
@@ -387,7 +387,7 @@ export default function Home() {
                   </p>
                   <p className="flex items-center gap-3">
                     <Phone className="w-5 h-5" />
-                    <span>+91 99526 57214</span>
+                    <span>+91 8903272879</span>
                   </p>
                   <p className="flex items-center gap-3">
                     <Globe2 className="w-5 h-5" />
