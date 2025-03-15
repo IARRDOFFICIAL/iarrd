@@ -205,7 +205,7 @@ export default function Home() {
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: "url('https://cdn.esahubble.org/archives/images/screen/heic0206c.jpg",
+              backgroundImage: "url('https://cdn.esahubble.org/archives/images/screen/opo0010a.jpg"),
             }}
           >
             <div className="absolute inset-0 bg-black/50" />
