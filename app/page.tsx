@@ -205,7 +205,7 @@ export default function Home() {
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: "url('https://i.pinimg.com/736x/8a/5f/4f/8a5f4f9d18d0fc203f8d23a00ed18b98.jpg')",
+              backgroundImage: "url('https://i.pinimg.com/736x/5a/7e/83/5a7e83b60747809ad5b4d267e9da5ac8.jpg')",
             }}
           >
             <div className="absolute inset-0 bg-black/50" />
