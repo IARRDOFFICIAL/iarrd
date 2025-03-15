@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Rocket, Satellite, Globe2, ExternalLink, Mail, Menu, X, Users, Phone, Info, FolderKanban, Shield } from "lucide-react";
+import { ArrowRight, Rocket, Satellite, Globe2,Anchor,ExternalLink, Mail, Menu, X, Users, Phone, Info, FolderKanban, Shield } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -205,7 +205,7 @@ export default function Home() {
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80')",
+              backgroundImage: "url('https://cdn.esahubble.org/archives/images/screen/heic0817a.jpg')",
             }}
           >
             <div className="absolute inset-0 bg-black/50" />
@@ -227,20 +227,30 @@ export default function Home() {
             <h2 className="text-4xl font-bold mb-12 text-center">About Us</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
-                <h3 className="text-2xl font-bold mb-4">Pioneering Space Exploration</h3>
-                <p className="text-gray-400 mb-6">IARRD (Indian Astronomy Rocket Research and Development), founded on May 27, 2023, by Harish Ragavendra Srinivasan, is a trailblazing space technology organization dedicated to advancing space exploration, astronomy, rocket science, and defense technology in India. Our mission is to democratize access to space technologies by making them more sustainable, affordable, and impactful in solving real-world challenges.</p>
-                <p className="text-gray-400 mb-6" >At IARRD, we specialize in the development of low-cost satellites, hybrid rocket propulsion systems, AI-powered astronomical research tools, and defense innovations. Through these technologies, we aim to enhance India's space and defense capabilities and make meaningful contributions to the global space and security community.</p>
+                <h3 className="text-2xl font-bold mb-4">Pioneering Space & Defense Innovations</h3>
+                <p className="text-gray-400 mb-6">IARRD (Indian Astronomy Rocket Research and Development), founded on May 27, 2023, by Harish Ragavendra Srinivasan, is a visionary space technology organization dedicated to advancing space exploration, astronomy, rocketry, defense, and marine technology in India. Our mission is to make cutting-edge technologies affordable, sustainable, and impactful in solving real-world challenges.</p>
+                <p className="text-gray-400 mb-6" >At IARRD, we specialize in:
+✅ Low-cost CubeSats for environmental monitoring and disaster management
+✅ Hybrid rocket propulsion systems for cost-effective space access
+✅ AI-powered astronomical research tools to enhance space observations
+✅ Advanced defense systems, including drone technology and surveillance solutions
+✅ Marine exploration innovations for underwater research and defense applications</p>
                 <ul className="space-y-4 text-gray-400">
                   <li className="flex items-center gap-2">
                   <h4 className="text-white-200 text-xl font-bold">Vision: </h4>
                     <div className="w-2 h-2 bg-white rounded-full"></div>
                     
-                    To revolutionize space exploration and defense technology by making them affordable, accessible, and sustainable, addressing global challenges through innovative space and defense solutions.
+                    To revolutionize space, defense, and marine technology by making them affordable, accessible, and sustainable, driving global progress through innovation.
                   </li>
                   <li className="flex items-center gap-2">
                     <h4 className="text-white-200 text-xl font-bold">Mission:</h4>
                     <div className="w-2 h-2 bg-white rounded-full"></div>
-                    We are committed to developing CubeSat missions, hybrid rocket propulsion, AI-powered satellites designed for environmental monitoring, disaster mitigation, educational outreach, and defense applications, thus bringing space technology closer to the community.  
+                    We are committed to:
+🚀 Developing next-generation CubeSat missions
+🔥 Advancing hybrid rocket propulsion for cost-effective launches
+🛰 Integrating AI-powered satellites for environmental & defense applications
+🌊 Enhancing marine technology for research and security
+🎓 Promoting education & collaboration to empower the next generation of innovators
                   </li>
                 </ul>
               </div>
@@ -260,7 +270,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
               <div className="text-center cursor-pointer hover:transform hover:scale-105 transition-transform">
                 <div className="bg-white/10 p-6 rounded-lg mb-6 inline-block">
-                  <Rocket className="w-12 h-12" />
+                  <Globe2 className="w-12 h-12" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Astronomy</h3>
                 <p className="text-gray-400">Advancing our understanding of the universe with cutting-edge observational tools and AI-driven research methodologies.</p>
@@ -274,7 +284,14 @@ export default function Home() {
               </div>
               <div className="text-center cursor-pointer hover:transform hover:scale-105 transition-transform">
                 <div className="bg-white/10 p-6 rounded-lg mb-6 inline-block">
-                  <Globe2 className="w-12 h-12" />
+                  <Anchor className="w-12 h-12" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4">Marine</h3>
+                <p className="text-gray-400">Exploring and protecting ocean ecosystems with AI-driven research, autonomous underwater vehicles, and innovative marine technology for sustainable resource management.</p>
+              </div>
+              <div className="text-center cursor-pointer hover:transform hover:scale-105 transition-transform">
+                <div className="bg-white/10 p-6 rounded-lg mb-6 inline-block">
+                  <Rocket className="w-12 h-12" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Rocket</h3>
                 <p className="text-gray-400">Developing cost-effective and reusable rocket propulsion systems to enable affordable and sustainable space exploration.</p>
