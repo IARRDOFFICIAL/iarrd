@@ -200,17 +200,14 @@ export default function Home() {
         />
       )}
 
-<section className="relative w-full h-screen">
-  <div
-    className="absolute inset-0 bg-center bg-no-repeat"
-    style={{
-      backgroundImage: "url('https://i.pinimg.com/736x/af/a4/e9/afa4e9e4c9e0cfd2f500fb36067571d3.jpg')",
-      backgroundSize: "contain", // Ensures the full image is visible without cropping
-      backgroundPosition: "center", // Centers the image
-      backgroundRepeat: "no-repeat", // Prevents repeating
-    }}
-  ></div>
-</section>
+      <main className="flex-1 overflow-auto pt-16">
+        <section className="relative h-screen">
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: "url('https://cdn.esahubble.org/archives/images/screen/heic0206c.jpg",
+            }}
+          >
             <div className="absolute inset-0 bg-black/50" />
           </div>
           <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
