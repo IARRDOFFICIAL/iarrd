@@ -200,7 +200,7 @@ export default function Home() {
         />
       )}
 
-      <main className="flex-1 overflow-auto pt-20">
+      <main className="flex-1 overflow-auto pt-30">
         <section className="relative h-screen">
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
