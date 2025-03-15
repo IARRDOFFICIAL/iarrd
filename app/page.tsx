@@ -14,13 +14,13 @@ export default function Home() {
       name: "Harish Ragavendra Srinivasan",
       role: "Founder & CEO",
       bio: "Harish is a self-taught innovator in satellites, rocketry, and defense technology. As the founder of IARRD, he leads strategic initiatives to drive advancements in space exploration and security, fostering global collaboration and cutting-edge innovation.",
-      photo: "https://pin.it/2ZUsBoGT6"
+      photo: "https://i.pinimg.com/736x/a6/18/3a/a6183a72cb5248dfae42cbacb890d2e0.jpg"
     },
     {
       name: "Keerthi Sai",
       role: "Chief Technology Officer (CTO) & R&D Team Lead",
       bio: "Keerthi Sai is the Chief Technology Officer and leads the R&D team at IARRD. With a strong background in data analysis, she drives technological innovation and oversees the development of key projects within the organization.",
-      photo: "https://pin.it/2ZUsBoGT6"
+      photo: "https://i.pinimg.com/736x/4c/c1/b2/4cc1b253f3af8817f51ea0fbd6e2176e.jpg"
     },
     {
       name: "Aadhi",
@@ -50,7 +50,7 @@ export default function Home() {
       name: "Mabasha",
       role: "Startup & Business Strategy Mentor",
       bio: "Mabasha guides IARRD in startup management, funding, and operations, helping the organization scale effectively. His expertise supports IARRD’s growth in space technology and defense innovation.",
-      photo: "https://pin.it/2ZUsBoGT6"
+      photo: "https://i.pinimg.com/736x/fb/56/bf/fb56bfb3fa43a38b942af3ef84f90a30.jpg"
     }
   ];
 
