@@ -13,14 +13,14 @@ export default function Home() {
     {
       name: "Harish Ragavendra Srinivasan",
       role: "Founder & CEO",
-      bio: "Harish is the founder of IARRD, with expertise in AI and Data Science. He leads all teams and oversees the strategic direction of the organization’s key projects.",
-      photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
+      bio: "Harish is the founder of IARRD, a self-taught enthusiast in satellites, rocketry, astronomy, defense, and marine exploration. He leads all teams, guiding IARRD’s efforts to contribute to India’s growth in space and defense technology. With a vision of global collaboration, he aims to develop innovative technologies that can support advancements in space exploration and defense worldwide.",
+      photo: "https://github.com/IARRDOFFICIAL/iarrd/blob/c40c2f06d90d2e3675f53db658085e0cb50eefb5/Pictures/profile%20pic.jpeg"
     },
     {
       name: "Keerthi Sai",
       role: "Chief Technology Officer (CTO) & R&D Team Lead",
       bio: "Keerthi Sai is the Chief Technology Officer and leads the R&D team at IARRD. With a strong background in data analysis, she drives technological innovation and oversees the development of key projects within the organization.",
-      photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
+      photo: "https://github.com/IARRDOFFICIAL/iarrd/blob/c40c2f06d90d2e3675f53db658085e0cb50eefb5/Pictures/Cto%20pic%201.jpg"
     },
     {
       name: "Aadhi",
@@ -45,7 +45,13 @@ export default function Home() {
       role: "Social Media Team Lead",
       bio: "Suruthi manages all outreach efforts, promoting IARRD’s work and securing partnerships through social media and public engagements.",
       photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
-    }
+    },
+    {
+      name: "Mabasha",
+      role: "Startup & Business Strategy Mentor",
+      bio: "Mabasha is a mentor at IARRD, specializing in startup management, funding strategies, and operational efficiency. With extensive experience in guiding emerging organizations, he helps IARRD navigate the challenges of fundraising, resource management, and strategic growth. His mentorship plays a vital role in shaping IARRD’s journey toward becoming a leading force in space technology and defense innovation.",
+      photo: "https://github.com/IARRDOFFICIAL/iarrd/blob/c40c2f06d90d2e3675f53db658085e0cb50eefb5/Pictures/Mentor%20pic1.jpg"
+    },
   ];
 
   const projects = [
