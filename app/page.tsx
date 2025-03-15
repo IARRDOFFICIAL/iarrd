@@ -14,13 +14,13 @@ export default function Home() {
       name: "Harish Ragavendra Srinivasan",
       role: "Founder & CEO",
       bio: "Harish is the founder of IARRD, a self-taught enthusiast in satellites, rocketry, astronomy, defense, and marine exploration. He leads all teams, guiding IARRD’s efforts to contribute to India’s growth in space and defense technology. With a vision of global collaboration, he aims to develop innovative technologies that can support advancements in space exploration and defense worldwide.",
-      photo: "https://github.com/IARRDOFFICIAL/iarrd/blob/c40c2f06d90d2e3675f53db658085e0cb50eefb5/Pictures/profile%20pic.jpeg"
+      photo: "https://github.com/IARRDOFFICIAL/iarrd/blob/main/Pictures/profile%20pic.jpeg"
     },
     {
       name: "Keerthi Sai",
       role: "Chief Technology Officer (CTO) & R&D Team Lead",
       bio: "Keerthi Sai is the Chief Technology Officer and leads the R&D team at IARRD. With a strong background in data analysis, she drives technological innovation and oversees the development of key projects within the organization.",
-      photo: "https://github.com/IARRDOFFICIAL/iarrd/blob/c40c2f06d90d2e3675f53db658085e0cb50eefb5/Pictures/Cto%20pic%201.jpg"
+      photo: "https://github.com/IARRDOFFICIAL/iarrd/blob/main/Pictures/Cto%20pic%201.jpg"
     },
     {
       name: "Aadhi",
@@ -49,8 +49,8 @@ export default function Home() {
     {
       name: "Mabasha",
       role: "Startup & Business Strategy Mentor",
-      bio: "Mabasha is a mentor at IARRD, specializing in startup management, funding strategies, and operational efficiency. With extensive experience in guiding emerging organizations, he helps IARRD navigate the challenges of fundraising, resource management, and strategic growth. His mentorship plays a vital role in shaping IARRD’s journey toward becoming a leading force in space technology and defense innovation.",
-      photo: "https://github.com/IARRDOFFICIAL/iarrd/blob/c40c2f06d90d2e3675f53db658085e0cb50eefb5/Pictures/Mentor%20pic1.jpg"
+      bio: "Mabash R guides IARRD in startup management, funding, and operations, helping the organization scale effectively. His expertise supports IARRD’s growth in space technology and defense innovation.",
+      photo: "https://github.com/IARRDOFFICIAL/iarrd/blob/main/Pictures/Mentor%20pic1.jpg"
     },
   ];
 
