@@ -26,7 +26,7 @@ export default function Home() {
       name: "Aadhi",
       role: "Astronomy Team Lead",
       bio: "Aadhi leads the Astronomy team at IARRD, focusing on developing AI-driven tools to enhance astronomical research and observations. His work advances our understanding of the universe through innovative technologies.",
-      photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
+      photo: "https://i.pinimg.com/736x/8b/9b/4b/8b9b4bb04212aeb368035a55d72ffa81.jpg"
     },
     {
       name: "Shravanthi S",
