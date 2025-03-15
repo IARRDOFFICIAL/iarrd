@@ -200,13 +200,18 @@ export default function Home() {
         />
       )}
 
-      <main className="flex-1 overflow-auto pt-16">
-        <section className="relative h-screen">
-          <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{
-              backgroundImage: "url('https://i.pinimg.com/736x/af/a4/e9/afa4e9e4c9e0cfd2f500fb36067571d3.jpg')",
-            }}
+<section className="relative w-full h-screen">
+  <div
+    className="absolute inset-0 bg-center bg-no-repeat"
+    style={{
+      backgroundImage: "url('https://i.pinimg.com/736x/af/a4/e9/afa4e9e4c9e0cfd2f500fb36067571d3.jpg')",
+      backgroundSize: "contain", // Ensures the full image is visible without cropping
+      backgroundPosition: "center", // Centers the image
+      backgroundRepeat: "no-repeat", // Prevents repeating
+    }}
+  ></div>
+</section>
+
           >
             <div className="absolute inset-0 bg-black/50" />
           </div>
