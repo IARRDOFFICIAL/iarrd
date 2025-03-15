@@ -211,8 +211,6 @@ export default function Home() {
     }}
   ></div>
 </section>
-
-          >
             <div className="absolute inset-0 bg-black/50" />
           </div>
           <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
