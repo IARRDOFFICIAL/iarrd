@@ -230,11 +230,11 @@ export default function Home() {
                 <h3 className="text-2xl font-bold mb-4">Pioneering Space & Defense Innovations</h3>
                 <p className="text-gray-400 mb-6">IARRD (Indian Astronomy Rocket Research and Development), founded on May 27, 2023, by Harish Ragavendra Srinivasan, is a visionary space technology organization dedicated to advancing space exploration, astronomy, rocketry, defense, and marine technology in India. Our mission is to make cutting-edge technologies affordable, sustainable, and impactful in solving real-world challenges.</p>
                 <p className="text-gray-400 mb-6" >At IARRD, we specialize in:
-✅ Low-cost CubeSats for environmental monitoring and disaster management
-✅ Hybrid rocket propulsion systems for cost-effective space access
-✅ AI-powered astronomical research tools to enhance space observations
-✅ Advanced defense systems, including drone technology and surveillance solutions
-✅ Marine exploration innovations for underwater research and defense applications</p>
+                • Low-cost CubeSats for environmental monitoring and disaster management
+                • Hybrid rocket propulsion systems for cost-effective space access
+                • AI-powered astronomical research tools to enhance space observations
+                • Advanced defense systems, including drone technology and surveillance solutions
+                • Marine exploration innovations for underwater research and defense applications</p>
                 <ul className="space-y-4 text-gray-400">
                   <li className="flex items-center gap-2">
                   <h4 className="text-white-200 text-xl font-bold">Vision: </h4>
@@ -246,11 +246,11 @@ export default function Home() {
                     <h4 className="text-white-200 text-xl font-bold">Mission:</h4>
                     <div className="w-2 h-2 bg-white rounded-full"></div>
                     We are committed to:
-🚀 Developing next-generation CubeSat missions
-🔥 Advancing hybrid rocket propulsion for cost-effective launches
-🛰 Integrating AI-powered satellites for environmental & defense applications
-🌊 Enhancing marine technology for research and security
-🎓 Promoting education & collaboration to empower the next generation of innovators
+ 🛰️Developing next-generation CubeSat missions
+ 🚀Advancing hybrid rocket propulsion for cost-effective launches
+ 🛡️Integrating AI-powered satellites for environmental & defense applications
+ ⚓Enhancing marine technology for research and security
+ 🎓Promoting education & collaboration to empower the next generation of innovators
                   </li>
                 </ul>
               </div>
