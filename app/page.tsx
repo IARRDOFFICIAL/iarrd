@@ -38,7 +38,7 @@ export default function Home() {
       name: "Syed Aarish",
       role: "Satellite Team Lead",
       bio: "Syed heads the satellite division, working on the development of CubeSat technologies and satellite payload systems to monitor the Earth and beyond.",
-      photo: "https://i.pinimg.com/736x/08/12/63/081263c30527e79c2d54b58cd9d215be.jpg"
+      photo: "https://i.pinimg.com/736x/f6/c3/bc/f6c3bc0cd2b75a94ec2063d80ddfc44e.jpg"
     },
     {
       name: "Jai Suruthi",
