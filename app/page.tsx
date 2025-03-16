@@ -44,7 +44,7 @@ export default function Home() {
       name: "Jai Suruthi",
       role: "Social Media Team Lead",
       bio: "Suruthi manages all outreach efforts, promoting IARRD’s work and securing partnerships through social media and public engagements.",
-      photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
+      photo: "https://i.pinimg.com/736x/2b/14/3d/2b143d81b9cdbe67fca5e22132ec97f2.jpg"
     },
     {
       name: "Mabasha",
