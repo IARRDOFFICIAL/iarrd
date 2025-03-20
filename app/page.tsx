@@ -205,7 +205,7 @@ export default function Home() {
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: "url('https://videos.pexels.com/video-files/1851190/1851190-uhd_2560_1440_25fps.mp4",
+              backgroundImage: "url('https://cdn.esahubble.org/archives/images/screen/potw2243a.jpg",
             }}
           >
             <div className="absolute inset-0 bg-black/50" />
