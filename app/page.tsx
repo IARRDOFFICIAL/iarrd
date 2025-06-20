@@ -23,6 +23,12 @@ export default function Home() {
       photo: "https://i.pinimg.com/736x/4c/c1/b2/4cc1b253f3af8817f51ea0fbd6e2176e.jpg"
     },
     {
+      name: "Goutham GV",
+      role: "CFO & Fund & Finance Lead",
+      bio: ""Goutham GV serves as the Chief Financial Officer at IARRD, managing all financial strategies and fundraising initiatives. With a keen focus on budgeting, resource allocation, and funding operations, he ensures financial stability while supporting innovation and sustainable growth.",
+      photo: "https://in.pinterest.com/pin/987343918314864009/"
+    },
+    {
       name: "Aadhi",
       role: "Astronomy Team Lead",
       bio: "Aadhi leads the Astronomy team at IARRD, focusing on developing AI-driven tools to enhance astronomical research and observations. His work advances our understanding of the universe through innovative technologies.",

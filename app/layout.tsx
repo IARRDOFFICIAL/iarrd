@@ -1,7 +1,8 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { Analytics } from "@vercel/analytics/react"; // Import Vercel Analytics
+import { Analytics } from "@vercel/analytics/react"; 
+import { SpeedInsights } from "@vercel/speed-insights/react"; // Import Speed Insights
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -19,7 +20,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {children}
-        <Analytics /> {/* Add Vercel Analytics component */}
+        <Analytics /> {/* Vercel Analytics component */}
+        <SpeedInsights /> {/* Vercel Speed Insights component */}
       </body>
     </html>
   );
