@@ -26,7 +26,7 @@ export default function Home() {
       name: "Goutham GV",
       role: "CFO & Fund & Finance Lead",
       bio: "Goutham GV serves as the Chief Financial Officer at IARRD, managing all financial strategies and fundraising initiatives. With a keen focus on budgeting, resource allocation, and funding operations, he ensures financial stability while supporting innovation and sustainable growth.",
-      photo: "https://in.pinterest.com/pin/987343918314864009/"
+      photo: "https://i.pinimg.com/736x/2f/90/9a/2f909ae3d3c091e8173fed223e54c612.jpg"
     },
     {
       name: "Aadhi",
