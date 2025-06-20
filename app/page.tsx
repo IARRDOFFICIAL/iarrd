@@ -35,10 +35,10 @@ export default function Home() {
       photo: "https://i.pinimg.com/736x/8b/9b/4b/8b9b4bb04212aeb368035a55d72ffa81.jpg"
     },
     {
-      name: "Shravanthi S",
+      name: "Hema Giri Raj",
       role: "Defence Team Lead",
-      bio: "Shravanthi leads the Defence team, researching space security and defense technologies, contributing to IARRD’s mission of sustainable space exploration.",
-      photo: "https://i.pinimg.com/736x/42/cb/6f/42cb6fa73677625a053d3dbd7fd213c9.jpg"
+      bio: "Hema Giri  leads the Defence team, researching space security and defense technologies, contributing to IARRD’s mission of sustainable space exploration.",
+      photo: "https://i.pinimg.com/736x/97/68/49/976849146979e50a1aeeceb8b5af2ec6.jpg"
     },
     {
       name: "Syed Aarish",
