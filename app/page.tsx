@@ -252,11 +252,11 @@ export default function Home() {
                     <h4 className="text-white-200 text-xl font-bold">Mission:</h4>
                     <div className="w-2 h-2 bg-white rounded-full"></div>
                     We are committed to:
- 🛰️Developing next-generation CubeSat missions
- 🚀Advancing hybrid rocket propulsion for cost-effective launches
- 🛡️Integrating AI-powered satellites for environmental & defense applications
- ⚓Enhancing marine technology for research and security
- 🎓Promoting education & collaboration to empower the next generation of innovators
+ Developing next-generation CubeSat missions
+ Advancing hybrid rocket propulsion for cost-effective launches
+ Integrating AI-powered satellites for environmental & defense applications
+ Enhancing marine technology for research and security
+ Promoting education & collaboration to empower the next generation of innovators
                   </li>
                 </ul>
               </div>
