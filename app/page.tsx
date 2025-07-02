@@ -41,10 +41,10 @@ export default function Home() {
       photo: "https://i.pinimg.com/736x/97/68/49/976849146979e50a1aeeceb8b5af2ec6.jpg"
     },
     {
-      name: "Syed Aarish",
+      name: "Sharan Murali",
       role: "Satellite Team Lead",
-      bio: "Syed heads the satellite division, working on the development of CubeSat technologies and satellite payload systems to monitor the Earth and beyond.",
-      photo: "https://i.pinimg.com/736x/f6/c3/bc/f6c3bc0cd2b75a94ec2063d80ddfc44e.jpg"
+      bio: "Sharan heads the satellite division, working on the development of CubeSat technologies and satellite payload systems to monitor the Earth and beyond.",
+      photo: "https://i.pinimg.com/736x/6c/c5/71/6cc57192e584bff418a87a3f9653534c.jpg"
     },
     {
       name: "Jai Suruthi",
@@ -69,8 +69,8 @@ export default function Home() {
       image: "https://i.pinimg.com/736x/59/3e/d2/593ed24b756ec62002e7d694deea60a5.jpg"
     },
     {
-      name: "Amaran Drone",
-      description: "IARRD is advancing its Amaran Drone project to develop cutting-edge drone technology for surveillance, security applications, and disaster management. These drones will provide affordable and efficient solutions for defense and public safety.",
+      name: "IRAI-Q2",
+      description: "IARRD is advancing its IRAI-Q2 Drone project to develop cutting-edge drone technology for surveillance, security applications, and disaster management. These drones will provide affordable and efficient solutions for defense and public safety.",
       progress: 45,
       timeline: "2024-2027",
       image: "https://i.pinimg.com/736x/16/b1/b2/16b1b2022ed00c739b1a18fe1d29b496.jpg"
