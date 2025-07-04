@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Rocket, Satellite, Globe2,Anchor,ExternalLink, Mail, Menu, X, Users, Phone, Info, FolderKanban, Shield } from "lucide-react";
+import { ArrowRight, Rocket, Satellite, Globe2, Anchor, ExternalLink, Mail, Menu, Users, Phone, Info, FolderKanban, Shield } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -37,7 +37,7 @@ export default function Home() {
     {
       name: "HemaGiri Raj",
       role: "Defence Team Lead",
-      bio: "Hema Giri  leads the Defence team, researching space security and defense technologies, contributing to IARRD’s mission of sustainable space exploration.",
+      bio: "Hema Giri leads the Defence team, researching space security and defense technologies, contributing to IARRD’s mission of sustainable space exploration.",
       photo: "https://i.pinimg.com/736x/97/68/49/976849146979e50a1aeeceb8b5af2ec6.jpg"
     },
     {
@@ -85,11 +85,18 @@ export default function Home() {
   ];
 
   useEffect(() => {
+    let timeoutId: NodeJS.Timeout;
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => {
+        setIsScrolled(window.scrollY > 50);
+      }, 100);
     };
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      clearTimeout(timeoutId);
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   const handleMissionClick = () => {
@@ -102,18 +109,18 @@ export default function Home() {
     const projectDetails = projects.find(p => p.name === projectName);
     if (projectDetails) {
       alert(`
-    Project: ${projectDetails.name}
-    Timeline: ${projectDetails.timeline}
-    Current Progress: ${projectDetails.progress}%
+        Project: ${projectDetails.name}
+        Timeline: ${projectDetails.timeline}
+        Current Progress: ${projectDetails.progress}%
 
-    Description: ${projectDetails.description}
+        Description: ${projectDetails.description}
 
-    Status: Active - Click OK to view detailed documentation.
-          `);
-        }
-      };
+        Status: Active - Click OK to view detailed documentation.
+      `);
+    }
+  };
 
-  const handleSubscribe = (e: React.FormEvent) => {
+  const handleSubscribe = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!email) {
       setSubscribeStatus("Please enter an email address");
@@ -133,7 +140,7 @@ export default function Home() {
   };
 
   return (
-    <><div className="flex h-screen bg-black">
+    <>
       {/* Fixed Header */}
       <div className="fixed top-0 left-0 right-0 z-40 bg-black/80 backdrop-blur-sm">
         <div className="container mx-auto px-4">
@@ -145,9 +152,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </div><aside
-      className={`fixed top-0 right-0 h-full w-64 bg-gray-800 z-50 transition-transform transform ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'}`}
-    >
+
+      {/* Sidebar */}
+      <aside
+        className={`fixed top-0 right-0 h-full w-64 bg-gray-800 z-50 transition-transform transform ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'}`}
+      >
         <div className="p-6">
           <div className="flex items-center mb-12">
             <div className="flex items-center gap-3">
@@ -159,6 +168,7 @@ export default function Home() {
             <button
               onClick={() => handleNavigation('About')}
               className="flex items-center gap-4 text-white/80 hover:text-white w-full p-3 rounded-lg hover:bg-white/10 transition-all"
+              aria-label="Navigate to About section"
             >
               <Info className="w-5 h-5" />
               <span className="text-lg">About</span>
@@ -166,6 +176,7 @@ export default function Home() {
             <button
               onClick={() => handleNavigation('Projects')}
               className="flex items-center gap-4 text-white/80 hover:text-white w-full p-3 rounded-lg hover:bg-white/10 transition-all"
+              aria-label="Navigate to Projects section"
             >
               <FolderKanban className="w-5 h-5" />
               <span className="text-lg">Projects</span>
@@ -173,284 +184,297 @@ export default function Home() {
             <button
               onClick={() => handleNavigation('Team')}
               className="flex items-center gap-4 text-white/80 hover:text-white w-full p-3 rounded-lg hover:bg-white/10 transition-all"
+              aria-label="Navigate to Team section"
             >
               <Users className="w-5 h-5" />
               <span className="text-lg">Team</span>
             </button>
-
             <button
               onClick={() => handleNavigation('Contact')}
               className="flex items-center gap-4 text-white/80 hover:text-white w-full p-3 rounded-lg hover:bg-white/10 transition-all"
+              aria-label="Navigate to Contact section"
             >
               <Phone className="w-5 h-5" />
               <span className="text-lg">Contact</span>
             </button>
           </nav>
         </div>
-      </aside><button
+      </aside>
+
+      {/* Sidebar Toggle Button */}
+      <button
         className="fixed z-50 top-6 right-6 bg-black/50 p-3 rounded-full backdrop-blur-sm hover:bg-black/70 transition-colors"
         onClick={() => setSidebarOpen(!isSidebarOpen)}
+        aria-label={isSidebarOpen ? "Close menu" : "Open menu"}
       >
         <Menu className="w-6 h-6 text-white" />
-      </button></>
+      </button>
 
       {isSidebarOpen && (
-        <div 
+        <div
           className="fixed inset-0 bg-black/50 z-40 backdrop-blur-sm"
           onClick={() => setSidebarOpen(false)}
         />
       )}
 
-     <section className="relative h-screen overflow-hidden">
-  <video
-    autoPlay
-    muted
-    loop
-    playsInline
-    className="absolute inset-0 w-full h-full object-cover"
-    src="https://github.com/IARRDOFFICIAL/iarrd/blob/main/public/images/Hero%20Video.mp4.mp4?raw=true"
-  />
-  <div className="absolute inset-0 bg-black/50" />
-  <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
-    <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight text-white">
-      Welcome to IARRD
-    </h1>
-    <p className="text-lg sm:text-xl md:text-2xl mb-8 max-w-2xl text-white">
-      Innovating Space, Inspiring Earth
-    </p>
-    <button 
-      onClick={handleMissionClick}
-      className="bg-white text-black px-8 py-3 rounded-lg hover:bg-gray-200 transition-colors flex items-center gap-2 text-lg"
-    >
-      Latest Missions <ArrowRight className="w-5 h-5" />
-    </button>
-  </div>
-</section>
-        <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-white/5">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center">About Us</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div>
-                <h3 className="text-2xl font-bold mb-4">Pioneering Space & Defense Innovations</h3>
-                <p className="text-gray-400 mb-6">IARRD (Indian Astronomy Rocket Research and Development), founded on May 27, 2023, by Harish Ragavendra Srinivasan, is a visionary space technology organization dedicated to advancing space exploration, astronomy, rocketry, defense, and marine technology in India. Our mission is to make cutting-edge technologies affordable, sustainable, and impactful in solving real-world challenges.</p>
-                <p className="text-gray-400 mb-6" >At IARRD, we specialize in:
+      {/* Hero Section */}
+      <section className="relative h-screen overflow-hidden">
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          src="https://github.com/IARRDOFFICIAL/iarrd/blob/main/public/images/Hero%20Video.mp4?raw=true"
+        />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight text-white">
+            Welcome to IARRD
+          </h1>
+          <p className="text-lg sm:text-xl md:text-2xl mb-8 max-w-2xl text-white">
+            Innovating Space, Inspiring Earth
+          </p>
+          <button
+            onClick={handleMissionClick}
+            className="bg-white text-black px-8 py-3 rounded-lg hover:bg-gray-200 transition-colors flex items-center gap-2 text-lg"
+            aria-label="View latest missions"
+          >
+            Latest Missions <ArrowRight className="w-5 h-5" />
+          </button>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-white/5">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold mb-12 text-center">About Us</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-2xl font-bold mb-4">Pioneering Space & Defense Innovations</h3>
+              <p className="text-gray-400 mb-6">IARRD (Indian Astronomy Rocket Research and Development), founded on May 27, 2023, by Harish Ragavendra Srinivasan, is a visionary space technology organization dedicated to advancing space exploration, astronomy, rocketry, defense, and marine technology in India. Our mission is to make cutting-edge technologies affordable, sustainable, and impactful in solving real-world challenges.</p>
+              <p className="text-gray-400 mb-6">At IARRD, we specialize in:
                 • Low-cost CubeSats for environmental monitoring and disaster management
                 • Hybrid rocket propulsion systems for cost-effective space access
                 • AI-powered astronomical research tools to enhance space observations
                 • Advanced defense systems, including drone technology and surveillance solutions
                 • Marine exploration innovations for underwater research and defense applications</p>
-                <ul className="space-y-4 text-gray-400">
-                  <li className="flex items-center gap-2">
-                  <h4 className="text-white-200 text-xl font-bold">Vision: </h4>
-                    <div className="w-2 h-2 bg-white rounded-full"></div>
-                    
-                    To revolutionize space, defense, and marine technology by making them affordable, accessible, and sustainable, driving global progress through innovation.
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <h4 className="text-white-200 text-xl font-bold">Mission:</h4>
-                    <div className="w-2 h-2 bg-white rounded-full"></div>
-                    We are committed to:
- Developing next-generation CubeSat missions
- Advancing hybrid rocket propulsion for cost-effective launches
- Integrating AI-powered satellites for environmental & defense applications
- Enhancing marine technology for research and security
- Promoting education & collaboration to empower the next generation of innovators
-                  </li>
-                </ul>
+              <ul className="space-y-4 text-gray-400">
+                <li className="flex items-center gap-2">
+                  <h4 className="text-white text-xl font-bold">Vision:</h4>
+                  <div className="w-2 h-2 bg-white rounded-full"></div>
+                  To revolutionize space, defense, and marine technology by making them affordable, accessible, and sustainable, driving global progress through innovation.
+                </li>
+                <li className="flex items-center gap-2">
+                  <h4 className="text-white text-xl font-bold">Mission:</h4>
+                  <div className="w-2 h-2 bg-white rounded-full"></div>
+                  We are committed to:
+                  Developing next-generation CubeSat missions
+                  Advancing hybrid rocket propulsion for cost-effective launches
+                  Integrating AI-powered satellites for environmental & defense applications
+                  Enhancing marine technology for research and security
+                  Promoting education & collaboration to empower the next generation of innovators
+                </li>
+              </ul>
+            </div>
+            <div className="relative h-96 rounded-lg overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1517976547714-720226b864c1?auto=format&fit=crop&q=80"
+                alt="IARRD space research facility"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div className="text-center cursor-pointer hover:transform hover:scale-105 transition-transform">
+              <div className="bg-white/10 p-6 rounded-lg mb-6 inline-block">
+                <Globe2 className="w-12 h-12" />
               </div>
-              <div className="relative h-96 rounded-lg overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1517976547714-720226b864c1?auto=format&fit=crop&q=80" 
-                  alt="Space center"
-                  className="absolute inset-0 w-full h-full object-cover"
+              <h3 className="text-2xl font-bold mb-4">Astronomy</h3>
+              <p className="text-gray-400">Advancing our understanding of the universe with cutting-edge observational tools and AI-driven research methodologies.</p>
+            </div>
+            <div className="text-center cursor-pointer hover:transform hover:scale-105 transition-transform">
+              <div className="bg-white/10 p-6 rounded-lg mb-6 inline-block">
+                <Shield className="w-12 h-12" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Defence</h3>
+              <p className="text-gray-400">Innovating in advanced defence systems with drone technology and AI solutions for enhanced national security and surveillance.</p>
+            </div>
+            <div className="text-center cursor-pointer hover:transform hover:scale-105 transition-transform">
+              <div className="bg-white/10 p-6 rounded-lg mb-6 inline-block">
+                <Anchor className="w-12 h-12" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Marine</h3>
+              <p className="text-gray-400">Exploring and protecting ocean ecosystems with AI-driven research, autonomous underwater vehicles, and innovative marine technology for sustainable resource management.</p>
+            </div>
+            <div className="text-center cursor-pointer hover:transform hover:scale-105 transition-transform">
+              <div className="bg-white/10 p-6 rounded-lg mb-6 inline-block">
+                <Rocket className="w-12 h-12" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Rocket</h3>
+              <p className="text-gray-400">Developing cost-effective and reusable rocket propulsion systems to enable affordable and sustainable space exploration.</p>
+            </div>
+            <div className="text-center cursor-pointer hover:transform hover:scale-105 transition-transform">
+              <div className="bg-white/10 p-6 rounded-lg mb-6 inline-block">
+                <Satellite className="w-12 h-12" />
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Satellite</h3>
+              <p className="text-gray-400">Creating innovative CubeSat solutions for environmental monitoring, disaster management, and global connectivity.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-white/5">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold mb-12 text-center">Current Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projects.map((project, index) => (
+              <div key={index} className="bg-black/50 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform">
+                <div
+                  className="h-48 bg-cover bg-center"
+                  style={{ backgroundImage: `url(${project.image})` }}
                 />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-20 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-              <div className="text-center cursor-pointer hover:transform hover:scale-105 transition-transform">
-                <div className="bg-white/10 p-6 rounded-lg mb-6 inline-block">
-                  <Globe2 className="w-12 h-12" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4">Astronomy</h3>
-                <p className="text-gray-400">Advancing our understanding of the universe with cutting-edge observational tools and AI-driven research methodologies.</p>
-              </div>
-              <div className="text-center cursor-pointer hover:transform hover:scale-105 transition-transform">
-                <div className="bg-white/10 p-6 rounded-lg mb-6 inline-block">
-                  <Shield className="w-12 h-12" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4">Defence</h3>
-                <p className="text-gray-400">Innovating in advanced defence systems with drone technology and AI solutions for enhanced national security and surveillance.</p>
-              </div>
-              <div className="text-center cursor-pointer hover:transform hover:scale-105 transition-transform">
-                <div className="bg-white/10 p-6 rounded-lg mb-6 inline-block">
-                  <Anchor className="w-12 h-12" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4">Marine</h3>
-                <p className="text-gray-400">Exploring and protecting ocean ecosystems with AI-driven research, autonomous underwater vehicles, and innovative marine technology for sustainable resource management.</p>
-              </div>
-              <div className="text-center cursor-pointer hover:transform hover:scale-105 transition-transform">
-                <div className="bg-white/10 p-6 rounded-lg mb-6 inline-block">
-                  <Rocket className="w-12 h-12" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4">Rocket</h3>
-                <p className="text-gray-400">Developing cost-effective and reusable rocket propulsion systems to enable affordable and sustainable space exploration.</p>
-              </div>
-              <div className="text-center cursor-pointer hover:transform hover:scale-105 transition-transform">
-                <div className="bg-white/10 p-6 rounded-lg mb-6 inline-block">
-                  <Satellite className="w-12 h-12" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4">Satellite</h3>
-                <p className="text-gray-400">Creating innovative CubeSat solutions for environmental monitoring, disaster management, and global connectivity.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-white/5">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center">Current Projects</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {projects.map((project, index) => (
-                <div key={index} className="bg-black/50 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-transform">
-                  <div 
-                    className="h-48 bg-cover bg-center"
-                    style={{ backgroundImage: `url(${project.image})` }}
-                  />
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">{project.name}</h3>
-                    <p className="text-gray-400 mb-4">{project.description}</p>
-                    <div className="space-y-2 mb-4">
-                      <div className="flex justify-between">
-                        <span>Progress</span>
-                        <span>{project.progress}%</span>
-                      </div>
-                      <div className="w-full bg-gray-700 rounded-full h-2">
-                        <div 
-                          className="bg-white rounded-full h-2 transition-all duration-500"
-                          style={{ width: `${project.progress}%` }}
-                        />
-                      </div>
-                      <div className="flex justify-between text-sm text-gray-400">
-                        <span>{project.timeline}</span>
-                      </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2">{project.name}</h3>
+                  <p className="text-gray-400 mb-4">{project.description}</p>
+                  <div className="space-y-2 mb-4">
+                    <div className="flex justify-between">
+                      <span>Progress</span>
+                      <span>{ Thessaloniansprogress}%</span>
                     </div>
-                    <button
-                      onClick={() => handleLearnMore(project.name)}
-                      className="w-full bg-white text-black px-4 py-2 rounded-lg flex items-center justify-center gap-2 hover:bg-gray-200 transition-colors"
-                    >
-                      View Project <ExternalLink className="w-4 h-4" />
-                    </button>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section id="team" className="py-20 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center">Our Team</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {teamMembers.map((member, index) => (
-                <div key={index} className="bg-white/5 p-8 rounded-lg hover:transform hover:scale-105 transition-transform text-center">
-                  <div className="mb-6 mx-auto">
-                    <div className="w-32 h-32 rounded-full overflow-hidden mx-auto border-4 border-white/10">
-                      <img 
-                        src={member.photo}
-                        alt={member.name}
-                        className="w-full h-full object-cover"
+                    <div className="w-full bg-gray-700 rounded-full h-2">
+                      <div
+                        className="bg-white rounded-full h-2 transition-all duration-500"
+                        style={{ width: `${project.progress}%` }}
                       />
                     </div>
+                    <div className="flex justify-between text-sm text-gray-400">
+                      <span>{project.timeline}</span>
+                    </div>
                   </div>
-                  <h3 className="text-xl font-bold mb-2">{member.name}</h3>
-                  <p className="text-gray-400 mb-4">{member.role}</p>
-                  <p className="text-gray-500">{member.bio}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section id="latest-mission" className="relative min-h-screen">
-          <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{
-              backgroundImage: "url('https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?auto=format&fit=crop&q=80')",
-            }}
-          >
-            <div className="absolute inset-0 bg-black/60" />
-          </div>
-          <div className="relative z-10 min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6">Latest Mission</h2>
-            <div className="bg-black/80 p-6 sm:p-8 rounded-lg max-w-2xl backdrop-blur-sm">
-              <h3 className="text-2xl font-bold mb-4">PrithiviSat</h3>
-              <p className="text-gray-300 mb-6">PrithiviSat is an AI-powered CubeSat designed for disaster mitigation, environmental monitoring, and real-time weather forecasting.</p>
-              <button 
-                onClick={() => handleLearnMore("Orbital Mission XR-27")}
-                className="bg-white text-black px-6 py-2 rounded-lg hover:bg-gray-200 transition-colors flex items-center gap-2"
-              >
-                Learn More <ExternalLink className="w-4 h-4" />
-              </button>
-            </div>
-          </div>
-        </section>
-        
-
-       <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-white/5">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center">Contact Us</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-              <div>
-                <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
-                <div className="space-y-4">
-                  <p className="flex items-center gap-3">
-                    <Mail className="w-5 h-5" />
-                    <span>iarrd.official@gmail.com</span>
-                  </p>
-                  <p className="flex items-center gap-3">
-                    <Phone className="w-5 h-5" />
-                    <span>+91 8903272879</span>
-                  </p>
-                  <p className="flex items-center gap-3">
-                    <Globe2 className="w-5 h-5" />
-                    <span>Anaicut road, Ranipet-13</span>
-                  </p>
-                </div>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold mb-6">Stay Updated</h3>
-                <form onSubmit={handleSubscribe} className="space-y-4">
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="w-full bg-black border border-white/20 px-6 py-3 rounded-lg focus:outline-none focus:border-white"
-                  />
-                  <button 
-                    type="submit"
-                    className="w-full bg-white text-black px-8 py-3 rounded-lg hover:bg-gray-200 transition-colors flex items-center justify-center gap-2"
+                  <button
+                    onClick={() => handleLearnMore(project.name)}
+                    className="w-full bg-white text-black px-4 py-2 rounded-lg flex items-center justify-center gap-2 hover:bg-gray-200 transition-colors"
+                    aria-label={`View details for ${project.name}`}
                   >
-                    Subscribe to Newsletter <Mail className="w-5 h-5" />
+                    View Project <ExternalLink className="w-4 h-4" />
                   </button>
-                </form>
-                {subscribeStatus && (
-                  <p className={`mt-4 ${subscribeStatus.includes("Thank you") ? "text-green-400" : "text-red-400"}`}>
-                    {subscribeStatus}
-                  </p>
-                )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section id="team" className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold mb-12 text-center">Our Team</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {teamMembers.map((member, index) => (
+              <div key={index} className="bg-white/5 p-8 rounded-lg hover:transform hover:scale-105 transition-transform text-center">
+                <div className="mb-6 mx-auto">
+                  <div className="w-32 h-32 rounded-full overflow-hidden mx-auto border-4 border-white/10">
+                    <img
+                      src={member.photo}
+                      alt={`Portrait of ${member.name}, ${member.role}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold mb-2">{member.name}</h3>
+                <p className="text-gray-400 mb-4">{member.role}</p>
+                <p className="text-gray-500">{member.bio}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Latest Mission Section */}
+      <section id="latest-mission" className="relative min-h-screen">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?auto=format&fit=crop&q=80')",
+          }}
+        >
+          <div className="absolute inset-0 bg-black/60" />
+        </div>
+        <div className="relative z-10 min-h-screen flex flex-col justify-center px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6">Latest Mission</h2>
+          <div className="bg-black/80 p-6 sm:p-8 rounded-lg max-w-2xl backdrop-blur-sm">
+            <h3 className="text-2xl font-bold mb-4">PrithiviSat</h3>
+            <p className="text-gray-300 mb-6">PrithiviSat is an AI-powered CubeSat designed for disaster mitigation, environmental monitoring, and real-time weather forecasting.</p>
+            <button
+              onClick={() => handleLearnMore("PrithiviSat")}
+              className="bg-white text-black px-6 py-2 rounded-lg hover:bg-gray-200 transition-colors flex items-center gap-2"
+              aria-label="Learn more about PrithiviSat"
+            >
+              Learn More <ExternalLink className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-white/5">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold mb-12 text-center">Contact Us</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+              <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
+              <div className="space-y-4">
+                <p className="flex items-center gap-3">
+                  <Mail className="w-5 h-5" />
+                  <span>iarrd.official@gmail.com</span>
+                </p>
+                <p className="flex items-center gap-3">
+                  <Phone className="w-5 h-5" />
+                  <span>+91 8903272879</span>
+                </p>
+                <p className="flex items-center gap-3">
+                  <Globe2 className="w-5 h-5" />
+                  <span>Anaicut road, Ranipet-13</span>
+                </p>
               </div>
             </div>
+            <div>
+              <h3 className="text-2xl font-bold mb-6">Stay Updated</h3>
+              <form onSubmit={handleSubscribe} className="space-y-4">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full bg-black border border-white/20 px-6 py-3 rounded-lg focus:outline-none focus:border-white"
+                  aria-label="Email address for newsletter subscription"
+                />
+                <button
+                  type="submit"
+                  className="w-full bg-white text-black px-8 py-3 rounded-lg hover:bg-gray-200 transition-colors flex items-center justify-center gap-2"
+                  aria-label="Subscribe to newsletter"
+                >
+                  Subscribe to Newsletter <Mail className="w-5 h-5" />
+                </button>
+              </form>
+              {subscribeStatus && (
+                <p className={`mt-4 ${subscribeStatus.includes("Thank you") ? "text-green-400" : "text-red-400"}`}>
+                  {subscribeStatus}
+                </p>
+              )}
+            </div>
           </div>
-        </section>
-        
-      </main>
-    </div>
+        </div>
+      </section>
+    </>
   );
 }
-
