@@ -206,28 +206,31 @@ export default function Home() {
         />
       )}
 
-      <main className="flex-1 overflow-auto pt-16">
-        <section className="relative h-screen">
-          <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{
-              backgroundImage: "url('https://cdn.esahubble.org/archives/images/screen/potw2243a.jpg",
-            }}
-          >
-            <div className="absolute inset-0 bg-black/50" />
-          </div>
-          <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight">Welcome to IARRD </h1>
-            <p className="text-lg sm:text-xl md:text-2xl mb-8 max-w-2xl">Innovating Space, Inspiring Earth</p>
-            <button 
-              onClick={handleMissionClick}
-              className="bg-white text-black px-8 py-3 rounded-lg hover:bg-gray-200 transition-colors flex items-center gap-2 text-lg"
-            >
-              Latest Missions <ArrowRight className="w-5 h-5" />
-            </button>
-          </div>
-        </section>
-
+     <section className="relative h-screen overflow-hidden">
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="absolute inset-0 w-full h-full object-cover"
+    src="https://github.com/IARRDOFFICIAL/iarrd/blob/main/public/images/Hero%20Video.mp4.mp4?raw=true"
+  />
+  <div className="absolute inset-0 bg-black/50" />
+  <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
+    <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight text-white">
+      Welcome to IARRD
+    </h1>
+    <p className="text-lg sm:text-xl md:text-2xl mb-8 max-w-2xl text-white">
+      Innovating Space, Inspiring Earth
+    </p>
+    <button 
+      onClick={handleMissionClick}
+      className="bg-white text-black px-8 py-3 rounded-lg hover:bg-gray-200 transition-colors flex items-center gap-2 text-lg"
+    >
+      Latest Missions <ArrowRight className="w-5 h-5" />
+    </button>
+  </div>
+</section>
         <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-white/5">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-4xl font-bold mb-12 text-center">About Us</h2>
