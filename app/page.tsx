@@ -133,7 +133,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex h-screen bg-black">
+    <><div className="flex h-screen bg-black">
       {/* Fixed Header */}
       <div className="fixed top-0 left-0 right-0 z-40 bg-black/80 backdrop-blur-sm">
         <div className="container mx-auto px-4">
@@ -145,59 +145,54 @@ export default function Home() {
           </div>
         </div>
       </div>
+    </div><aside
+      className={`fixed top-0 right-0 h-full w-64 bg-gray-800 z-50 transition-transform transform ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'}`}
+    >
+        <div className="p-6">
+          <div className="flex items-center mb-12">
+            <div className="flex items-center gap-3">
+              <Rocket className="w-8 h-8 text-white" />
+              <span className="text-xl font-orbitron text-white">IARRD</span>
+            </div>
+          </div>
+          <nav className="space-y-6">
+            <button
+              onClick={() => handleNavigation('About')}
+              className="flex items-center gap-4 text-white/80 hover:text-white w-full p-3 rounded-lg hover:bg-white/10 transition-all"
+            >
+              <Info className="w-5 h-5" />
+              <span className="text-lg">About</span>
+            </button>
+            <button
+              onClick={() => handleNavigation('Projects')}
+              className="flex items-center gap-4 text-white/80 hover:text-white w-full p-3 rounded-lg hover:bg-white/10 transition-all"
+            >
+              <FolderKanban className="w-5 h-5" />
+              <span className="text-lg">Projects</span>
+            </button>
+            <button
+              onClick={() => handleNavigation('Team')}
+              className="flex items-center gap-4 text-white/80 hover:text-white w-full p-3 rounded-lg hover:bg-white/10 transition-all"
+            >
+              <Users className="w-5 h-5" />
+              <span className="text-lg">Team</span>
+            </button>
 
-<aside 
-  className={`fixed top-0 right-0 h-full w-64 bg-gray-800 z-50 transition-transform transform ${
-    isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
-  }`}
->
-  <div className="p-6">
-    <div className="flex items-center mb-12">
-      <div className="flex items-center gap-3">
-        <Rocket className="w-8 h-8 text-white" />
-        <span className="text-xl font-orbitron text-white">IARRD</span>
-      </div>
-    </div>
-    <nav className="space-y-6">
-      <button
-        onClick={() => handleNavigation('About')}
-        className="flex items-center gap-4 text-white/80 hover:text-white w-full p-3 rounded-lg hover:bg-white/10 transition-all"
+            <button
+              onClick={() => handleNavigation('Contact')}
+              className="flex items-center gap-4 text-white/80 hover:text-white w-full p-3 rounded-lg hover:bg-white/10 transition-all"
+            >
+              <Phone className="w-5 h-5" />
+              <span className="text-lg">Contact</span>
+            </button>
+          </nav>
+        </div>
+      </aside><button
+        className="fixed z-50 top-6 right-6 bg-black/50 p-3 rounded-full backdrop-blur-sm hover:bg-black/70 transition-colors"
+        onClick={() => setSidebarOpen(!isSidebarOpen)}
       >
-        <Info className="w-5 h-5" />
-        <span className="text-lg">About</span>
-      </button>
-      <button
-        onClick={() => handleNavigation('Projects')}
-        className="flex items-center gap-4 text-white/80 hover:text-white w-full p-3 rounded-lg hover:bg-white/10 transition-all"
-      >
-        <FolderKanban className="w-5 h-5" />
-        <span className="text-lg">Projects</span>
-      </button>
-      <button
-        onClick={() => handleNavigation('Team')}
-        className="flex items-center gap-4 text-white/80 hover:text-white w-full p-3 rounded-lg hover:bg-white/10 transition-all"
-      >
-        <Users className="w-5 h-5" />
-        <span className="text-lg">Team</span>
-      </button>
-
-      <button
-        onClick={() => handleNavigation('Contact')}
-        className="flex items-center gap-4 text-white/80 hover:text-white w-full p-3 rounded-lg hover:bg-white/10 transition-all"
-      >
-        <Phone className="w-5 h-5" />
-        <span className="text-lg">Contact</span>
-      </button>
-    </nav>
-  </div>
-</aside>
-
-<button
-  className="fixed z-50 top-6 right-6 bg-black/50 p-3 rounded-full backdrop-blur-sm hover:bg-black/70 transition-colors"
-  onClick={() => setSidebarOpen(!isSidebarOpen)} 
->
-  <Menu className="w-6 h-6 text-white" />
-</button>
+        <Menu className="w-6 h-6 text-white" />
+      </button></>
 
       {isSidebarOpen && (
         <div 
@@ -458,3 +453,4 @@ export default function Home() {
     </div>
   );
 }
+
