@@ -221,7 +221,7 @@ export default function Home() {
           loop
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
-          src="E:\IARRD WEBSITE\iarrd\public\Videos\HeroVideo (1).mp4"
+          src="/videos/HeroVideo.mp4"
         />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
