@@ -221,7 +221,7 @@ export default function Home() {
           loop
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
-          src="https://drive.google.com/file/d/1N0CKTTy2rYN805UFyK5kqlKskXf-tLvi/view?usp=sharing"
+          src="https://drive.google.com/uc?export=download&id=1N0CKTTy2rYN805UFyK5kqlKskXf-tLvi"
         />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
