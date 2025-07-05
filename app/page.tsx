@@ -141,7 +141,6 @@ export default function Home() {
 
   return (
     <>
-      {/* Fixed Header */}
       <div className="fixed top-0 left-0 right-0 z-40 bg-black/80 backdrop-blur-sm">
         <div className="container mx-auto px-4">
           <div className="flex items-center h-16">
@@ -153,7 +152,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Sidebar */}
       <aside
         className={`fixed top-0 right-0 h-full w-64 bg-gray-800 z-50 transition-transform transform ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
@@ -201,7 +199,6 @@ export default function Home() {
         </div>
       </aside>
 
-      {/* Sidebar Toggle Button */}
       <button
         className="fixed z-50 top-6 right-6 bg-black/50 p-3 rounded-full backdrop-blur-sm hover:bg-black/70 transition-colors"
         onClick={() => setSidebarOpen(!isSidebarOpen)}
@@ -217,7 +214,6 @@ export default function Home() {
         />
       )}
 
-      {/* Hero Section */}
       <section className="relative h-screen overflow-hidden">
         <video
           autoPlay
@@ -225,7 +221,7 @@ export default function Home() {
           loop
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
-          src="https://github.com/IARRDOFFICIAL/iarrd/blob/main/public/images/Hero%20Video.mp4?raw=true"
+          src="https://drive.google.com/file/d/1PzOQaAFsZDHnOKdOsvBABIOOUza9jkET/view?usp=sharing"
         />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
@@ -245,7 +241,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
       <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-white/5">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">About Us</h2>
@@ -288,7 +283,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -331,7 +325,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Projects Section */}
       <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-white/5">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">Current Projects</h2>
@@ -348,7 +341,7 @@ export default function Home() {
                   <div className="space-y-2 mb-4">
                     <div className="flex justify-between">
                       <span>Progress</span>
-                      <span>{ Thessaloniansprogress}%</span>
+                      <span>{project.progress}%</span>
                     </div>
                     <div className="w-full bg-gray-700 rounded-full h-2">
                       <div
@@ -374,7 +367,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Team Section */}
       <section id="team" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">Our Team</h2>
@@ -399,7 +391,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Latest Mission Section */}
       <section id="latest-mission" className="relative min-h-screen">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -425,7 +416,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-white/5">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">Contact Us</h2>
@@ -475,6 +465,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      // IARRD Website
     </>
   );
 }
