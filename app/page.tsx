@@ -32,7 +32,7 @@ export default function Home() {
   name: "Sahana Raga Sri Vk",
   role: "CBE & Creative Head at Social Media Team",
   bio: "Sahana Raga Sri Vk leads IARRD’s business and creative efforts as Chief Business Executive and Creative Head. She manages outreach, collaborations, and social media strategy, helping the organization grow its presence while staying true to its vision.",
-  photo: "https://drive.google.com/uc?export=view&id=1W-jru9knkJTrSvLuf7CBj7fB17fKctwP"
+  photo: "https://i.pinimg.com/736x/27/0a/32/270a32a411438222f0a49fe35fb8eb90.jpg"
 },
     {
       name: "Aadhi",
