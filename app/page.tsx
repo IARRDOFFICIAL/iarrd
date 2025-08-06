@@ -29,11 +29,11 @@ export default function Home() {
       photo: "https://i.pinimg.com/736x/af/c7/c1/afc7c1f038e75d5459e2050669aa4d0c.jpg"
     },
     {
-      name: "Sahana Raga Sri Vk",
-      role: "CBE & Creative Head at Social Media Team",
-      bio: "Sahana Raga Sri is the Chief Business Executive and Creative Head of the Social Media Team at IARRD. She plays a pivotal role in shaping the organization’s brand identity, outreach strategy, and external collaborations. With a unique blend of business acumen and creative vision, she leads digital storytelling, oversees strategic partnerships, and ensures that IARRD’s mission reaches and resonates with a wide audience.",
-      photo: "https://drive.google.com/drive/folders/1ckDeTg2TWkq7qoebdKpH9i3ibAa6t_yo"
-    },
+  name: "Sahana Raga Sri Vk",
+  role: "CBE & Creative Head at Social Media Team",
+  bio: "Sahana Raga Sri Vk leads IARRD’s business and creative efforts as Chief Business Executive and Creative Head. She manages outreach, collaborations, and social media strategy, helping the organization grow its presence while staying true to its vision.",
+  photo: "https://drive.google.com/uc?export=view&id=1W-jru9knkJTrSvLuf7CBj7fB17fKctwP"
+},
     {
       name: "Aadhi",
       role: "Astronomy Team Lead",
