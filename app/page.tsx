@@ -70,22 +70,22 @@ export default function Home() {
     {
       name: "PrithiviSat",
       description: "PrithiviSat is an AI-powered CubeSat designed for disaster mitigation, environmental monitoring, and real-time weather forecasting. It is specifically aimed at managing natural disasters and agricultural optimization.",
-      progress: 80,
+      progress: 60,
       timeline: "2023-2026",
       image: "https://i.pinimg.com/736x/59/3e/d2/593ed24b756ec62002e7d694deea60a5.jpg"
     },
     {
       name: "IRAI-Q2",
       description: "IARRD is advancing its IRAI-Q2 Drone project to develop cutting-edge drone technology for surveillance, security applications, and disaster management. These drones will provide affordable and efficient solutions for defense and public safety.",
-      progress: 45,
-      timeline: "2024-2027",
+      progress: 70,
+      timeline: "2023-2026",
       image: "https://i.pinimg.com/736x/16/b1/b2/16b1b2022ed00c739b1a18fe1d29b496.jpg"
     },
     {
       name: "Astronomy Research Tools",
       description: "IARRD is creating advanced AI-driven tools to enhance astronomical observations and research. These tools aim to provide accessible and innovative solutions for educational and research institutions, supporting the study of celestial phenomena.",
       progress: 15,
-      timeline: "2025-2027",
+      timeline: "2026-2028",
       image: "https://images.unsplash.com/photo-1446776858070-70c3d5ed6758?auto=format&fit=crop&q=80"
     }
   ];
