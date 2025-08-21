@@ -1,4 +1,3 @@
-this is page.css
 "use client";
 
 import { ArrowRight, Rocket, Satellite, Globe2, Anchor, ExternalLink, Mail, Menu, Users, Phone, Info, FolderKanban, Shield } from "lucide-react";
