@@ -35,10 +35,10 @@ export default function Home() {
   photo: "https://i.pinimg.com/736x/27/0a/32/270a32a411438222f0a49fe35fb8eb90.jpg"
 },
     {
-      name: "Aadhi",
+      name: "Tamizh Amuthan R",
       role: "Astronomy Team Lead",
-      bio: "Aadhi leads the Astronomy team at IARRD, focusing on developing AI-driven tools to enhance astronomical research and observations. His work advances our understanding of the universe through innovative technologies.",
-      photo: "https://i.pinimg.com/736x/85/64/cf/8564cf68c67b454d3d5ab66459b3c26a.jpg"
+      bio: "Tamizh leads the Astronomy team at IARRD, focusing on developing AI-driven tools to enhance astronomical research and observations. His work advances our understanding of the universe through innovative technologies.",
+      photo: "https://i.pinimg.com/736x/c3/34/f9/c334f95c6c50c10413a2b588d2de8c34.jpg"
     },
     {
       name: "HemaGiri Raj",
