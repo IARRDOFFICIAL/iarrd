@@ -53,10 +53,10 @@ export default function Home() {
       photo: "https://i.pinimg.com/736x/6c/c5/71/6cc57192e584bff418a87a3f9653534c.jpg"
     },
     {
-      name: "Jai Suruthi",
+      name: "Gnanesh A S",
       role: "Social Media Team Lead",
-      bio: "Suruthi manages all outreach efforts, promoting IARRD’s work and securing partnerships through social media and public engagements.",
-      photo: "https://i.pinimg.com/736x/2b/14/3d/2b143d81b9cdbe67fca5e22132ec97f2.jpg"
+      bio: "Gnanesh manages all outreach efforts, promoting IARRD’s work and securing partnerships through social media and public engagements.",
+      photo: "https://i.pinimg.com/736x/80/d3/d2/80d3d2753905d1ee727a1495c74bda8e.jpg"
     },
     {
       name: "Mabasha",
