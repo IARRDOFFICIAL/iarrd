@@ -56,7 +56,7 @@ export default function Home() {
       name: "Gnanesh A S",
       role: "Social Media Team Lead",
       bio: "Gnanesh manages all outreach efforts, promoting IARRD’s work and securing partnerships through social media and public engagements.",
-      photo: "https://i.pinimg.com/736x/80/d3/d2/80d3d2753905d1ee727a1495c74bda8e.jpg"
+      photo: "https://i.pinimg.com/736x/39/83/62/398362704d904748b92fba8a91be1418.jpg"
     },
     {
       name: "Mabasha",
