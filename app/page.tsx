@@ -47,6 +47,12 @@ export default function Home() {
       photo: "https://i.pinimg.com/736x/97/68/49/976849146979e50a1aeeceb8b5af2ec6.jpg"
     },
     {
+      name: "Mohammed Aqlath",
+      role: "Marine Team Lead",
+      bio: "Mohammed Aqlath leads the Marine Division at IARRD, focusing on developing smart and sustainable marine technologies using AI and robotics for ocean research and defense applications.",
+      photo: "https://i.pinimg.com/736x/08/16/82/08168231a5597e7015b5d020336c6591.jpg"
+    },
+    {
       name: "Sharan Murali",
       role: "Satellite Team Lead",
       bio: "Sharan heads the satellite division, working on the development of CubeSat technologies and satellite payload systems to monitor the Earth and beyond.",
