@@ -47,10 +47,10 @@ export default function Home() {
       photo: "https://i.pinimg.com/736x/97/68/49/976849146979e50a1aeeceb8b5af2ec6.jpg"
     },
     {
-      name: "Mohammed Aqlath",
+      name: "Santhosh Kumar B",
       role: "Marine Team Lead",
-      bio: "Mohammed Aqlath leads the Marine Division at IARRD, focusing on developing smart and sustainable marine technologies using AI and robotics for ocean research and defense applications.",
-      photo: "https://i.pinimg.com/736x/08/16/82/08168231a5597e7015b5d020336c6591.jpg"
+      bio: "Santhosh Kumar leads the Marine Division at IARRD, focusing on developing smart and sustainable marine technologies using AI and robotics for ocean research and defense applications.",
+      photo:"https://i.pinimg.com/736x/1e/47/a6/1e47a6fa8b67c0e13d304d8011f3f4b5.jpg"
     },
     {
       name: "Sharan Murali",
