@@ -17,7 +17,7 @@ export default function Home() {
       photo:"https://i.pinimg.com/736x/d4/8e/1b/d48e1b5cbb3f5ace1cebef360ff91064.jpg"
     },
     {
-      name: "Keerthi Sai",
+      name: "Keerthi Sai A S",
       role: "CTO & R&D Team Lead",
       bio: "Keerthi Sai is the Chief Technology Officer and leads the R&D team at IARRD. With a strong background in data analysis, she drives technological innovation and oversees the development of key projects within the organization.",
       photo: "https://i.pinimg.com/736x/65/2a/1c/652a1ca38f31a529c63740e6eda5e156.jpg"
