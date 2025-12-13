@@ -14,7 +14,7 @@ export default function Home() {
       name: "Harish Ragavendra Srinivasan",
       role: "Founder & CEO",
       bio: "Harish is a self-taught innovator in satellites, rocketry, and defense technology. As the founder of IARRD, he leads strategic initiatives to drive advancements in space exploration and security, fostering global collaboration and cutting-edge innovation.",
-      photo: "https://i.pinimg.com/736x/a6/18/3a/a6183a72cb5248dfae42cbacb890d2e0.jpg"
+      photo:"https://i.pinimg.com/736x/d4/8e/1b/d48e1b5cbb3f5ace1cebef360ff91064.jpg"
     },
     {
       name: "Keerthi Sai",
