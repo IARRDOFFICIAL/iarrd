@@ -85,3 +85,16 @@
   .font-orbitron { font-family: 'Orbitron', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; }
   .shadow-soft { box-shadow: 0 10px 30px rgba(0,0,0,.25); }
 }
+/* add near bottom of file */
+
+/* Simple fade-up animation */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up { animation: fade-up 0.8s ease-out forwards; }
+
+/* Card hover */
+.card-hover {
+  @apply transition-transform transition-shadow duration-300 hover:-translate-y-1 hover:shadow-2xl;
+}

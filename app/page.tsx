@@ -14,7 +14,7 @@ export default function Home() {
       name: "Harish Ragavendra Srinivasan",
       role: "Founder & CEO",
       bio: "Harish is a self-taught innovator in satellites, rocketry, and defense technology. As the founder of IARRD, he leads strategic initiatives to drive advancements in space exploration and security, fostering global collaboration and cutting-edge innovation.",
-      photo:"https://i.pinimg.com/736x/d4/8e/1b/d48e1b5cbb3f5ace1cebef360ff91064.jpg"
+      photo: "https://i.pinimg.com/736x/d4/8e/1b/d48e1b5cbb3f5ace1cebef360ff91064.jpg"
     },
     {
       name: "Keerthi Sai A S",
@@ -29,11 +29,11 @@ export default function Home() {
       photo: "https://i.pinimg.com/736x/af/c7/c1/afc7c1f038e75d5459e2050669aa4d0c.jpg"
     },
     {
-  name: "Sahana Raga Sri Vk",
-  role: "CBDE & Creative Head at Social Media Team",
-  bio: "Sahana Raga Sri Vk leads IARRD’s business and creative efforts as Chief Business Executive and Creative Head. She manages outreach, collaborations, and social media strategy, helping the organization grow its presence while staying true to its vision.",
-  photo: "https://i.pinimg.com/736x/27/0a/32/270a32a411438222f0a49fe35fb8eb90.jpg"
-},
+      name: "Sahana Raga Sri Vk",
+      role: "CBDE & Creative Head at Social Media Team",
+      bio: "Sahana Raga Sri Vk leads IARRD's business and creative efforts as Chief Business Executive and Creative Head. She manages outreach, collaborations, and social media strategy, helping the organization grow its presence while staying true to its vision.",
+      photo: "https://i.pinimg.com/736x/27/0a/32/270a32a411438222f0a49fe35fb8eb90.jpg"
+    },
     {
       name: "Tamizh Amuthan R",
       role: "Astronomy Team Lead",
@@ -43,14 +43,14 @@ export default function Home() {
     {
       name: "HemaGiri Raj",
       role: "Defence Team Lead",
-      bio: "Hema Giri leads the Defence team, researching space security and defense technologies, contributing to IARRD’s mission of sustainable space exploration.",
+      bio: "Hema Giri leads the Defence team, researching space security and defense technologies, contributing to IARRD's mission of sustainable space exploration.",
       photo: "https://i.pinimg.com/736x/97/68/49/976849146979e50a1aeeceb8b5af2ec6.jpg"
     },
     {
       name: "Santhosh Kumar B",
       role: "Marine Team Lead",
       bio: "Santhosh Kumar leads the Marine Division at IARRD, focusing on developing smart and sustainable marine technologies using AI and robotics for ocean research and defense applications.",
-      photo:"https://i.pinimg.com/736x/1e/47/a6/1e47a6fa8b67c0e13d304d8011f3f4b5.jpg"
+      photo: "https://i.pinimg.com/736x/1e/47/a6/1e47a6fa8b67c0e13d304d8011f3f4b5.jpg"
     },
     {
       name: "Sharan Murali",
@@ -61,13 +61,13 @@ export default function Home() {
     {
       name: "Gnanesh A S",
       role: "Social Media Team Lead",
-      bio: "Gnanesh manages all outreach efforts, promoting IARRD’s work and securing partnerships through social media and public engagements.",
+      bio: "Gnanesh manages all outreach efforts, promoting IARRD's work and securing partnerships through social media and public engagements.",
       photo: "https://i.pinimg.com/736x/39/83/62/398362704d904748b92fba8a91be1418.jpg"
     },
     {
       name: "Mabasha",
       role: "Startup & Business Strategy Mentor",
-      bio: "Mabasha guides IARRD in startup management, funding, and operations, helping the organization scale effectively. His expertise supports IARRD’s growth in space technology and defense innovation.",
+      bio: "Mabasha guides IARRD in startup management, funding, and operations, helping the organization scale effectively. His expertise supports IARRD's growth in space technology and defense innovation.",
       photo: "https://i.pinimg.com/736x/fb/56/bf/fb56bfb3fa43a38b942af3ef84f90a30.jpg"
     }
   ];
@@ -97,7 +97,7 @@ export default function Home() {
   ];
 
   useEffect(() => {
-    let timeoutId: NodeJS.Timeout;
+    let timeoutId;
     const handleScroll = () => {
       clearTimeout(timeoutId);
       timeoutId = setTimeout(() => {
@@ -116,7 +116,7 @@ export default function Home() {
     missionSection?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const handleLearnMore = (projectName: string) => {
+  const handleLearnMore = (projectName) => {
     setSidebarOpen(false);
     const projectDetails = projects.find(p => p.name === projectName);
     if (projectDetails) {
@@ -132,7 +132,7 @@ export default function Home() {
     }
   };
 
-  const handleSubscribe = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubscribe = (e) => {
     e.preventDefault();
     if (!email) {
       setSubscribeStatus("Please enter an email address");
@@ -143,7 +143,7 @@ export default function Home() {
     setTimeout(() => setSubscribeStatus(""), 3000);
   };
 
-  const handleNavigation = (section: string) => {
+  const handleNavigation = (section) => {
     setSidebarOpen(false);
     const element = document.getElementById(section.toLowerCase());
     if (element) {
@@ -267,20 +267,28 @@ export default function Home() {
                 • Advanced defense systems, including drone technology and surveillance solutions
                 • Marine exploration innovations for underwater research and defense applications</p>
               <ul className="space-y-4 text-gray-400">
-                <li className="flex items-center gap-2">
-                  <h4 className="text-white text-xl font-bold">Vision:</h4>
-                  <div className="w-2 h-2 bg-white rounded-full"></div>
-                  To revolutionize space, defense, and marine technology by making them affordable, accessible, and sustainable, driving global progress through innovation.
+                <li className="flex items-start gap-2">
+                  <div>
+                    <h4 className="text-white text-xl font-bold">Vision:</h4>
+                    <div className="flex items-center gap-2 mt-1">
+                      <div className="w-2 h-2 bg-white rounded-full flex-shrink-0"></div>
+                      <span>To revolutionize space, defense, and marine technology by making them affordable, accessible, and sustainable, driving global progress through innovation.</span>
+                    </div>
+                  </div>
                 </li>
-                <li className="flex items-center gap-2">
-                  <h4 className="text-white text-xl font-bold">Mission:</h4>
-                  <div className="w-2 h-2 bg-white rounded-full"></div>
-                  We are committed to:
-                  Developing next-generation CubeSat missions
-                  Advancing hybrid rocket propulsion for cost-effective launches
-                  Integrating AI-powered satellites for environmental & defense applications
-                  Enhancing marine technology for research and security
-                  Promoting education & collaboration to empower the next generation of innovators
+                <li className="flex items-start gap-2">
+                  <div>
+                    <h4 className="text-white text-xl font-bold">Mission:</h4>
+                    <div className="flex items-center gap-2 mt-1">
+                      <div className="w-2 h-2 bg-white rounded-full flex-shrink-0"></div>
+                      <span>We are committed to:
+                        Developing next-generation CubeSat missions
+                        Advancing hybrid rocket propulsion for cost-effective launches
+                        Integrating AI-powered satellites for environmental & defense applications
+                        Enhancing marine technology for research and security
+                        Promoting education & collaboration to empower the next generation of innovators</span>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -451,23 +459,23 @@ export default function Home() {
             </div>
             <div>
               <h3 className="text-2xl font-bold mb-6">Stay Updated</h3>
-              <form onSubmit={handleSubscribe} className="space-y-4">
+              <div className="space-y-4">
                 <input
                   type="email"
                   placeholder="Enter your email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full bg-black border border-white/20 px-6 py-3 rounded-lg focus:outline-none focus:border-white"
+                  className="w-full bg-black border border-white/20 px-6 py-3 rounded-lg focus:outline-none focus:border-white text-white"
                   aria-label="Email address for newsletter subscription"
                 />
                 <button
-                  type="submit"
+                  onClick={handleSubscribe}
                   className="w-full bg-white text-black px-8 py-3 rounded-lg hover:bg-gray-200 transition-colors flex items-center justify-center gap-2"
                   aria-label="Subscribe to newsletter"
                 >
                   Subscribe to Newsletter <Mail className="w-5 h-5" />
                 </button>
-              </form>
+              </div>
               {subscribeStatus && (
                 <p className={`mt-4 ${subscribeStatus.includes("Thank you") ? "text-green-400" : "text-red-400"}`}>
                   {subscribeStatus}
